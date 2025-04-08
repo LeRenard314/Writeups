@@ -64,7 +64,7 @@ Among various tourist photos, I found a helpful reference:
 
 Using Google Earth, I marked all the known locations from the photo:
 
-![Marked locations](images/objects)
+![Marked locations](images/objects.png)
 
 Then I drew lines between them and added an approximate trajectory toward the Lakhta Center:
 
