@@ -83,7 +83,7 @@ The token has 3 parts encoded this way and separated by dots (again, this ain’
 
 Decoded the token using CyberChef:
 
-![decode](images/decode/png)
+![decode](images/decode.png)
 
 I guess I am not the only naughty individual who thought of adjusting the `guest` param to `admin`. Sadly for us, the attackers, it’s not that simple. Even if you change the payload, the signature remains — and it was generated using a secret we don’t have.
 
