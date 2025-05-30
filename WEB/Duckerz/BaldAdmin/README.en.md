@@ -6,7 +6,7 @@
 - 🇬🇧 [English](README.en.md)
 
 
-Today we’re diving into a web task from Duckerz. In order to get the flag, we need to exploit a weak JWT token secret. I’d say this task is relatively simple overall — **if** you ignore the fact that without a little hint from the dev, I’d have been sweating over it WAY longer.
+Today we’re diving into a web task from [Duckerz](https://duckerz.ru/). In order to get the flag, we need to exploit a weak JWT token secret. I’d say this task is relatively simple overall — **if** you ignore the fact that without a little hint from the dev, I’d have been sweating over it WAY longer.
 
 Also decided to start getting into the habit of adding a fix section at the end of my writeups — after all, for the client/employer, the report and the patch matter more than my shenanigans behind the terminal ^^
 
