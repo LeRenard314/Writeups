@@ -34,14 +34,14 @@ Buggy Web Application (BWAPP) предлагает набор заданий, о
 # Цель
 ---
 
-![[images/SqliGetSelectTarget.png]]
+![hehe](images/SqliGetSelectTarget.png)
 
 # Функциональность
 ---
 
 Приложение позволяет выбрать фильм из предоставленного списка:
 
-![[images/SqliGetSelectFunction.png]]
+![hehe](images/SqliGetSelectFunction.png)
 
 ### Предполагаемый SQL-запрос:
 
@@ -54,17 +54,17 @@ SELECT * FROM movies WHERE id="$variable"
 
 Тестирование со стандартной полезной нагрузкой `1' OR 1=1 -- ` вернуло ошибку, однако `1 OR 1=1 -- ` не вызвало сбоя:
 
-![[images/SqliGetSelectTest.png]]
+![hehe](images/SqliGetSelectTest.png)
 
 Передача полезной нагрузки на основе `UNION`, ранее использовавшейся в ))))), не вызвала ошибок, но не позволила получить информацию из (вероятной) таблицы users:
 
-![[images/SqlietGetSelectTest2.png]]
+![hehe](images/SqlietGetSelectTest2.png)
 
 Передача полезных нагрузок на основе `UNION` с добавлениями `ORDER BY` позволила получить данные из таблицы `users` путем изменения параметра `ORDER BY`:
 
-![[images/SqliGetSelectPwd.png]]
+![hehe](images/SqliGetSelectPwd.png)
 
-![[images/SqliGetSelectUsers.png]]
+![hehe](images/SqliGetSelectUsers.png)
 
 ## Финальные полезные нагрузки
 

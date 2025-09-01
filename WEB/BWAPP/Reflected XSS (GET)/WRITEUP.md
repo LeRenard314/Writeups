@@ -35,12 +35,12 @@ Buggy Web Application (BWAPP) предлагает набор заданий, к
 # Приложение
 ---
 
-![[images/XssReflectedTarget.png]]
+![Target](images/XssReflectedTarget.png)
 
 # Функционал
 ---
 
-![[images/XssReflectedFunction.png]]
+![Function](images/XssReflectedFunction.png)
 
 # Эксплуатация (фаза 1)
 ---
@@ -55,15 +55,15 @@ Buggy Web Application (BWAPP) предлагает набор заданий, к
 
 ## BurpSuite
 
-![[images/XssReflectedGetBurp.png]]
+![GetBurp](images/XssReflectedGetBurp.png)
 
 ## Браузер
 
-![[images/XssReflectedBrowser.png]]
+![RefBrowser](images/XssReflectedBrowser.png)
 
 ## Результат
 
-![[images/XssReflectedSuccess.png]]
+![RefSuccess](images/XssReflectedSuccess.png)
 
 Приложение уязвимо к Reflected XSS. Эту уязвимость можно использовать для кражи cookie других пользователей.
 
@@ -90,22 +90,22 @@ python3 -m http.server "порт"
 
 Переход по URL от пользователя `bee/bug` привел к успешной краже cookie:
 
-![[images/XssReflectedCookieTheftTest.png]]
+![Cookie](images/XssReflectedCookieTheftTest.png)
 (PHPSESSID содержит токен, используемый для аутентификации пользователей)
 
 Теперь смоделируем взаимодействие с жертвой:
 
-![[images/XssReflectedMamont1.png]]
+![Mamont](images/XssReflectedMamont1.png)
 
 Я создал пользователя-жертву и использовал его учетные данные для входа в bWAPP.
 
 Как только жертва переходит по злонамеренной ссылке (которая в реальном мире обычно предоставляется c помощью методов социальной инженерии), значение cookie отправляется на сервер атакующего:
 
-![[images/XssReflectedMamont2.png]]
+![Mamont1](images/XssReflectedMamont2.png)
 
 Сработало! Cookie пользователя `Mamont` были успешно скомпрометированы без его ведома:
 
-![[images/XssReflectedMamontCookie.png]]
+![MamontCookie](images/XssReflectedMamontCookie.png)
 (Для более четкого вывода я перезапустил экземпляр)
 
 ## Подход для уровня Medium

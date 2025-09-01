@@ -33,29 +33,29 @@ The Buggy Web Application (BWAPP) offers a set of challenges, which contains tas
 # Target
 ---
 
-![[images/IdorTicketsTarget.png]]
+![Target](images/IdorTicketsTarget.png)
 
 # Functionality
 ---
 
 The application allows to place an order:
 
-![[images/IdorTicketsFunction.png]]
+![Function](images/IdorTicketsFunction.png)
 
 # Exploitation (Low security level)
 ---
 
 The application passes `ticket_quantity` and `ticket_price` parameters, which can be easily modified to an absurd condition ^^:
 
-![[images/IdorTicketsSuccess.png]]
+![Success](images/IdorTicketsSuccess.png)
 
 # Exploitation (Meduim securtiy level)
 ---
 
 On the medium security level, the `ticket_price` parameter is likely hard-coded, and not passed via http:
 
-![[images/IdorTicketsMedium.png]]
+![Medium](images/IdorTicketsMedium.png)
 
 Although it is still possible to trick the application by adding the missing parameter to the request with the desired value (the I symbol added by accident to the `order` value):
 
-![[images/IdorMediumSucess.png]]
+![Sucess](images/IdorMediumSucess.png)

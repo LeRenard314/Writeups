@@ -35,26 +35,26 @@ Buggy Web Application (BWAPP) предлагает набор заданий, п
 # Приложение
 ---
 
-![[images/DirTravTarget.png]]
+![Target](images/DirTravTarget.png)
 
 # Эксплуатация (Низкий уровень безопасности)
 ---
 
 Базовая PoC нагрузка для обхода директорий раскрыла содержимое файла `/etc/passwd` (также возможно чтение `/etc/group`):
 
-![[images/DirTravSucess.png]]
+![Success](images/DirTravSucess.png)
 
 # Эксплуатация (Средний уровень безопасности)
 ---
 
 На более высоких уровнях безопасности стандартные техники экспуалатации "обнаруживаются":
 
-![[images/DirTravMediumDetect.png]]
+![MedDetect](images/DirTravMediumDetect.png)
 
 Используя большой набор нагрузок, возможно обойти ограничения и эксплуатировать уязвимость. Что забавно, первая запись в списке (`/etc/passwd`) привела к успешной атаке:
 
-![[images/DirTravMediumSucess.png]]
+![MedSuccess](images/DirTravMediumSucess.png)
 
 Стоит отметить, что фаззинг-атака выявила другие существующие файлы (`/etc/shadow`, `/proc/self/environ`), которые существуют, но доступ к ним невозможен, вероятно, из-за привилегий пользователя:
 
-![[images/DirTravShadow.png]]
+![Shadow](images/DirTravShadow.png)

@@ -6,12 +6,12 @@ A collection of practical write-ups on exploiting vulnerabilities in the educati
 
 ## 📁 Contents
 
-- [Directory Traversal (Files)](BWAPP/Directory%20Traversal%20%28Files%29/WRITEUP.md)
-- [Insecure Direct Object Reference (IDOR)](BWAPP/IDOR%20%28Tickets%29/WRITEUP.md)
-- [PHP Code Injection](BWAPP/PHP%20Code%20injection/WRITEUP.md)
-- [Reflected XSS (GET)](BWAPP/Reflected%20XSS%20%28GET%29/WRITEUP.md)
-- [SQL Injection (GET Search)](BWAPP/SQL%20Injection%20%28GET%20Search%29/WRITEUP.md)
-- [SQL Injection (GET Select)](BWAPP/SQL%20Injection%20%28GET%20Select%29/WRITEUP.md)
+- [Directory Traversal (Files)](Directory%20Traversal%20%28Files%29/WRITEUP.md)
+- [Insecure Direct Object Reference (IDOR)](IDOR%20%28Tickets%29/WRITEUP.md)
+- [PHP Code Injection](PHP%20Code%20injection/WRITEUP.md)
+- [Reflected XSS (GET)](Reflected%20XSS%20%28GET%29/WRITEUP.md)
+- [SQL Injection (GET Search)](SQL%20Injection%20%28GET%20Search%29/WRITEUP.md)
+- [SQL Injection (GET Select)](SQL%20Injection%20%28GET%20Select%29/WRITEUP.md)
 
 ## ⚠️ Disclaimer
 

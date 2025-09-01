@@ -34,7 +34,7 @@ The Buggy Web Application (BWAPP) offers a set of challenges, which contains tas
 # Target
 ---
 
-![[images/images/PhpiTarget.png]]
+![Target](images/images/PhpiTarget.png)
 
 
 # Functionality
@@ -42,7 +42,7 @@ The Buggy Web Application (BWAPP) offers a set of challenges, which contains tas
 
 The application reflects text passed through the `message` parameter:
 
-![[images/images/PhpiFunction.png]]
+![Phpi](images/images/PhpiFunction.png)
 
 
 # Exploitation
@@ -54,7 +54,7 @@ Testing a PoC PHP injection payload:
 ?message=lol; echo "Hacked!"
 ```
 
-![[images/images/PhpiPoc.png]]
+![PhpiPoc](images/images/PhpiPoc.png)
 
 The application is vulnerable to PHP code injection!
 
@@ -68,4 +68,4 @@ Using PHP `system()` based payloads it is possible to execute commands reading s
 
 This will list all files in the current directory with their permissions:
 
-![[images/PhpiSucess.png]]
+![Phpi Success](images/PhpiSucess.png)

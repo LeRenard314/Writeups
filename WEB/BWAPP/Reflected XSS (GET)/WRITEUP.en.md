@@ -35,12 +35,12 @@ The Buggy Web Application (BWAPP) offers a set of challenges based on the ***Cro
 # Target
 ---
 
-![[images/XssReflectedTarget.png]]
+![Target](images/XssReflectedTarget.png)
 
 # Functionality
 ---
 
-![[images/XssReflectedFunction.png]]
+![Function](images/XssReflectedFunction.png)
 
 # Exploitation (phase 1)
 ---
@@ -55,15 +55,15 @@ Testing for Reflected XSS by passing a simple XSS payload in the `lastname` fiel
 
 ## BurpSuite
 
-![[images/XssReflectedGetBurp.png]]
+![GetBurp](images/XssReflectedGetBurp.png)
 
 ## Browser
 
-![[images/XssReflectedBrowser.png]]
+![GetBrowser](images/XssReflectedBrowser.png)
 
 ## Result
 
-![[images/XssReflectedSuccess.png]]
+![RefSuccess](images/XssReflectedSuccess.png)
 
 The application is vulnerable to Reflected XSS. This vulnerability can be used to steal cookies of other users.
 
@@ -90,22 +90,22 @@ Their cookies will be sent to the HTTP server running on port `8000`.
 
 Visiting the URL as the default `bee/bug` user resulted in successful cookie theft:
 
-![[images/XssReflectedCookieTheftTest.png]]
+![RefCookie](images/XssReflectedCookieTheftTest.png)
 (PHPSESSID contains a token used for user authentication)
 
 Now let's simulate victim interaction:
 
-![[images/XssReflectedMamont1.png]]
+![Mamont](images/XssReflectedMamont1.png)
 
 I created a victim user and used their credentials to log into BWAPP.
 
 Once the victim follows the malicious link (which in the real world is typically provided through social engineering methods), the cookie value is sent to the attacker's server:
 
-![[images/XssReflectedMamont2.png]]
+![Mamont2](images/XssReflectedMamont2.png)
 
 It worked! The `Mamont` user's cookies were successfully compromised without their knowledge:
 
-![[images/XssReflectedMamontCookie.png]]
+![MamontCookie](images/XssReflectedMamontCookie.png)
 (For clearer output, I restarted the server instance)
 
 ## Medium-level Approach
