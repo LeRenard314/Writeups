@@ -34,26 +34,26 @@ The Buggy Web Application (BWAPP) offers a set of challenges dedicated to the **
 # Target
 ---
 
-![[DirTravTarget.png]]
+![[images/DirTravTarget.png]]
 
 # Exploitation (Low security level)
 ---
 
 A basic Poc Directory Traversal payload revealed the contents of the `etc/passwd` (reading of `etc/group` is also possible) file:
 
-![[DirTravSucess.png]]
+![[images/DirTravSucess.png]]
 
 # Exploitation (Medium security level)
 ---
 
 On higher security levels, the standard payload techniques end up being detected:
 
-![[DirTravMediumDetect.png]]
+![[images/DirTravMediumDetect.png]]
 
 Using a large set of payloads, it is possible to bypass the regulations and exploit the vulnerability. What's funny is that the first list entry (`/etc/passwd`) resulted in a succeful attack:
 
-![[DirTravMediumSucess.png]]
+![[images/DirTravMediumSucess.png]]
 
 It is worth noting that the fuzzing attack revealed other existing files (`/etc/shadow`, `etc/proc/self/envriron`), which exist yet cannot be acessed likely because of user priveleges:
 
-![[DirTravShadow.png]]
+![[images/DirTravShadow.png]]

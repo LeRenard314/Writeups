@@ -34,14 +34,14 @@ The Buggy Web Application (BWAPP) offers a set of challenges based on the ***SQL
 # Target
 ---
 
-![[SqliGetSelectTarget.png]]
+![[images/SqliGetSelectTarget.png]]
 
 # Functionality
 ---
 
 The application allows us to choose a movie from the list provided:
 
-![[SqliGetSelectFunction.png]]
+![[images/SqliGetSelectFunction.png]]
 
 ### Probable SQL query:
 
@@ -54,17 +54,17 @@ SELECT * FROM movies WHERE id="$variable"
 
 Testing with standard payload `1' OR 1=1 -- ` returned an error, yet the `1 OR 1=1 -- ` didn't fail:
 
-![[SqliGetSelectTest.png]]
+![[images/SqliGetSelectTest.png]]
 
 Passing a `UNION` based payload earlier used in [[19.09.2025/SQL Injection (GET Search)/README.en]] didn't return any errors, yet did not allow to retrieve any information from the (likely) users table:
 
-![[SqlietGetSelectTest2.png]]
+![[images/SqlietGetSelectTest2.png]]
 
 Passing `UNION` based payloads with `ORDER BY` additions allowed to retrieve data from the `users` table by modifying the `ORDER BY` parameter:
 
-![[SqliGetSelectPwd.png]]
+![[images/SqliGetSelectPwd.png]]
 
-![[SqliGetSelectUsers.png]]
+![[images/SqliGetSelectUsers.png]]
 
 ## Final payloads
 

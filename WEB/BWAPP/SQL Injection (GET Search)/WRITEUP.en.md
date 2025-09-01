@@ -34,18 +34,18 @@ The Buggy Web Application (BWAPP) offers a set of challenges based on the ***SQL
 # Target
 ---
 
-![[SqliGetSearchTarget.png]]
+![[images/SqliGetSearchTarget.png]]
 
 # Functionality
 ---
 
 Passing `test` to determine how the application reacts to entries that don't exist in the database:
 
-![[SqliGetSearchTest.png]]
+![[images/SqliGetSearchTest.png]]
 
 Passing `Iron Man` to see the application's reaction to an entry that is (likely) in the database:
 
-![[SqliGetSearchFunction.png]]
+![[images/SqliGetSearchFunction.png]]
 
 ### Probable SQL query:
 
@@ -58,23 +58,23 @@ SELECT * FROM movies WHERE title="$variable"
 
 Passing the `' OR 1=1 -- ` query to test for SQL injection:
 
-![[SqliGetSearchSuccess.png]]
+![[images/SqliGetSearchSuccess.png]]
 
 The application returns all entries from the database, vulnerability confirmed.
 
 Now passing a `UNION`-based payload to attempt retrieving data from the (likely present) `users` table:
 
-![[SqlGetSearchUnion.png]]
+![[images/SqlGetSearchUnion.png]]
 
 This proves that the `users` table exists. The statements return a different number of columns.
 
 Passing the `UNION` payload tampered with `NULL` values to retrieve the `users` table entries, incrementing the number of `NULL` values until the query results in success:
 
-![[SqliGetSearchUnionPwd.png]]
+![[images/SqliGetSearchUnionPwd.png]]
 
 Hashed passwords that can later be cracked using tools like `hashcat`.
 
-![[SqliGetSearchUnionUsers.png]]
+![[images/SqliGetSearchUnionUsers.png]]
 
 ### Final payloads
 

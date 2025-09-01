@@ -34,18 +34,18 @@
 # Приложение
 ---
 
-![[SqliGetSearchTarget.png]]
+![[images/SqliGetSearchTarget.png]]
 
 # Функциональность
 ---
 
 Передача `test` для определения реакции приложения на записи, которых нет в базе данных:
 
-![[SqliGetSearchTest.png]]
+![[images/SqliGetSearchTest.png]]
 
 Передача `Iron Man` для наблюдения реакции приложения на запись, которая (вероятно) есть в базе данных:
 
-![[SqliGetSearchFunction.png]]
+![[images/SqliGetSearchFunction.png]]
 
 ### Предполагаемый SQL-запрос:
 
@@ -58,23 +58,23 @@ SELECT * FROM movies WHERE title="$variable"
 
 Передача запроса `' OR 1=1 -- ` для тестирования на уязвимость SQL-инъекции:
 
-![[SqliGetSearchSuccess.png]]
+![[images/SqliGetSearchSuccess.png]]
 
 Приложение возвращает все записи из базы данных, уязвимость подтверждена.
 
 Теперь передача нагрузки на основе `UNION` для попытки получения данных из (вероятно существующей) таблицы `users`:
 
-![[SqlGetSearchUnion.png]]
+![[images/SqlGetSearchUnion.png]]
 
 Это доказывает, что таблица `users` существует. Операторы возвращают разное количество столбцов.
 
 Передача полезной нагрузки `UNION` с измененными значениями `NULL` для получения записей таблицы `users`, с увеличением количества значений `NULL` до успешного выполнения запроса:
 
-![[SqliGetSearchUnionPwd.png]]
+![[images/SqliGetSearchUnionPwd.png]]
 
 Хэшированные пароли, которые впоследствии можно взломать с помощью таких инструментов, как `hashcat`.
 
-![[SqliGetSearchUnionUsers.png]]
+![[images/SqliGetSearchUnionUsers.png]]
 
 ### Финальные пейлоады
 

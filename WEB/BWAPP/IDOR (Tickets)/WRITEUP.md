@@ -34,29 +34,29 @@ Buggy Web Application (BWAPP) предлагает набор заданий, к
 # Приложение
 ---
 
-![[IdorTicketsTarget.png]]
+![[images/IdorTicketsTarget.png]]
 
 # Функционал
 ---
 
 Приложение позволяет оформить заказ:
 
-![[IdorTicketsFunction.png]]
+![[images/IdorTicketsFunction.png]]
 
 # Эксплуатация (Низкий уровень безопасности)
 ---
 
 Приложение передает параметры `ticket_quantity` (количество билетов) и `ticket_price` (цена билета), которые можно легко изменить на абсурдное значение ^^:
 
-![[IdorTicketsSuccess.png]]
+![[images/IdorTicketsSuccess.png]]
 
 # Эксплуатация (Средний уровень безопасности)
 ---
 
 На среднем уровне безопасности параметр `ticket_price`, скорее всего, жестко зашит в код и не передается через HTTP:
 
-![[IdorTicketsMedium.png]]
+![[images/IdorTicketsMedium.png]]
 
 Тем не менее, все еще возможно обмануть приложение, добавив отсутствующий параметр в запрос с желаемым значением (символ `I`, случайно добавленный к значению `order`):
 
-![[IdorMediumSucess.png]]
+![[images/IdorMediumSucess.png]]

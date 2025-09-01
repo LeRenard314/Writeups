@@ -34,14 +34,14 @@ Buggy Web Application (BWAPP) предлагает набор заданий, к
 # Приложение
 ---
 
-![[PhpiTarget.png]]
+![[images/PhpiTarget.png]]
 
 # Функционал
 ---
 
 Приложение отображает текст, переданный через параметр `message`:
 
-![[PhpiFunction.png]]
+![[images/PhpiFunction.png]]
 
 # Эксплуатация
 ---
@@ -52,7 +52,7 @@ Buggy Web Application (BWAPP) предлагает набор заданий, к
 ?message=lol; echo "Hacked!"
 ```
 
-![[PhpiPoc.png]]
+![[images/PhpiPoc.png]]
 
 Приложение уязвимо к внедрению PHP-кода!
 
@@ -66,4 +66,4 @@ Buggy Web Application (BWAPP) предлагает набор заданий, к
 
 Исполнение нагрузки выведет все файлы в текущем каталоге с их правами доступа:
 
-![[PhpiSucess.png]]
+![[images/PhpiSucess.png]]
