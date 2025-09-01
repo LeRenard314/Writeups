@@ -4,14 +4,14 @@
 
 A collection of practical write-ups on exploiting vulnerabilities in the educational web application BWAPP (Buggy Web Application).
 
-## 📁 Contents
+## 📁 Contents (links to writeups)
 
-- [Directory Traversal (Files)](Directory%20Traversal%20%28Files%29/WRITEUP.md)
-- [Insecure Direct Object Reference (IDOR)](IDOR%20%28Tickets%29/WRITEUP.md)
-- [PHP Code Injection](PHP%20Code%20injection/WRITEUP.md)
-- [Reflected XSS (GET)](Reflected%20XSS%20%28GET%29/WRITEUP.md)
-- [SQL Injection (GET Search)](SQL%20Injection%20%28GET%20Search%29/WRITEUP.md)
-- [SQL Injection (GET Select)](SQL%20Injection%20%28GET%20Select%29/WRITEUP.md)
+- [Directory Traversal (Files)](Directory-Traversal-(Files)/WRITEUP.md)
+- [Insecure Direct Object Reference (IDOR)](IDOR-(Tickets)/WRITEUP.md)
+- [PHP Code Injection](PHP-Code-Injection/WRITEUP.md)
+- [Reflected XSS (GET)](Reflected-XSS-(GET)/WRITEUP.md)
+- [SQL Injection (GET Search)](SQL-Injection-(GET-Search)/WRITEUP.md)
+- [SQL Injection (GET Select)](SQL-Injection-(GET-Select)/WRITEUP.md)
 
 ## ⚠️ Disclaimer
 
