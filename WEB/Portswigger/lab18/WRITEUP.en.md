@@ -1,4 +1,9 @@
-# SQL injection with filter bypass via XML 
+# SQL injection with filter bypass via XML
+
+Выберите язык / Choose your language:
+
+- 🇷🇺 [Русский](WRITEUP.ru.md)  
+- 🇬🇧 [English](WRITEUP.en.md)
 
 ## Disclaimer
 ---
