@@ -2,8 +2,8 @@
 
 Выберите язык / Choose your language:
 
-- 🇷🇺 [Русский](README.md)  
-- 🇬🇧 [English](README.en.md)
+- 🇷🇺 [Русский](WRITEUP.md)  
+- 🇬🇧 [English](WRITEUP.en.md)
 
 Наичинаю закрывать гештальт по таскам на платформе WebKids. Помню еще в самом начале своего пути поковырял парочку и бросил. Очень зря, тасков много, таски разные, и все интересные ^^ Приятно чувствовать прогресс, ведь по прошествию времени аж смешно становится от того, что я тупил над некоторыми когда только начинал. Может новичкам будет полезен сей материал
 
@@ -29,207 +29,207 @@
 
 ## Level 1
 
-![placeholder](/images/webKidsLevel1Card.png)
+![placeholder](images/webKidsLevel1Card.png)
 
 Переходим по ссылке, лутаем самый халявный флаг ^^
 
-![placeholder](/images/webKidsLevel1Solve.png)
+![placeholder](images/webKidsLevel1Solve.png)
 
 
 ## Level 2
 
-![placeholder](/images/webKidsLevel2Card.png)
+![placeholder](images/webKidsLevel2Card.png)
 
 Переходим по ссылке, находим флаг в HTML:
 
-![placeholder](/images/webKidsLevel2Solve.png)
+![placeholder](images/webKidsLevel2Solve.png)
 
 
 ## Level 3
 
-![placeholder](/images/webKidsLevel3Card.png)
+![placeholder](images/webKidsLevel3Card.png)
 
 Опа, ситуация
 
-![placeholder](/images/webKidsLevel3Target.png)
+![placeholder](images/webKidsLevel3Target.png)
 
 Делать нечего, расчехляем `curl`. Можно было бы конечно попробовать как то с юзер агентом поиграться, но мы же кул хацкеры, все делаем в терминале:
 
-![placeholder](/images/webKidsLevel3Solve.png)
+![placeholder](images/webKidsLevel3Solve.png)
 
 Сюда ^^
 
 
 ## Level 4
 
-![placeholder](/images/webKidsLevel4Card.png)
+![placeholder](images/webKidsLevel4Card.png)
 
 Продолжаем разговор:
 
-![placeholder](/images/webKidsLevel4Target.png)
+![placeholder](images/webKidsLevel4Target.png)
 
 Опять таки, воспользуемся `curl` и успешно получим флаг:
 
-![placeholder](/images/webKidsLevel4Solve.png)
+![placeholder](images/webKidsLevel4Solve.png)
 
 
 ## Level 5
 
-![placeholder](/images/webKidsLevel5Card.png)
+![placeholder](images/webKidsLevel5Card.png)
 
 Учимся URL энкодингу без смс и регистрации ^^
 
-![placeholder](/images/webKidsLevel5Target.png)
+![placeholder](images/webKidsLevel5Target.png)
 
 И на помощь снова приходит `curl`:
 
-![placeholder](/images/webKidsLevel3Solve.png)
+![placeholder](images/webKidsLevel3Solve.png)
 
 
 ## Level 6
 
-![placeholder](/images/webKidsLevel6Card.png)
+![placeholder](images/webKidsLevel6Card.png)
 
-![placeholder](/images/webKidsLevel6Target.png)
+![placeholder](images/webKidsLevel6Target.png)
 
 Опять таки, начинаем курлыкать, досылая нужные хедеры:
 
-![placeholder](/images/webKidsLevel6Solve.png)
+![placeholder](images/webKidsLevel6Solve.png)
 
 
 ## Level 7
 
-![placeholder](/images/webKidsLevel7card.png)
+![placeholder](images/webKidsLevel7card.png)
 
 Помню как много гемора было с этой таской, и все из за неправильного формата куки токенов в файле
 
-![placeholder](/images/webKidsLevel7Target.png)
+![placeholder](images/webKidsLevel7Target.png)
 
 Создаем файл так, чтобы `curl` смог их спарсить (как на фото), и посылаем запрос:
 
-![placeholder](/images/webKidsLevel7Solve.png)
+![placeholder](images/webKidsLevel7Solve.png)
 
 
 ## Level 8
 
-![placeholder](/images/webKidsLevel8card.png)
+![placeholder](images/webKidsLevel8card.png)
 
-![placeholder](/images/webKidsLevel8Target.png)
+![placeholder](images/webKidsLevel8Target.png)
 
 На сей раз мне стало лень как то извращаться в терминале, поэтому я просто нашел флажок в дев-тулзах:
 
-![placeholder](/images/webKidsLevel8Solve.png)
+![placeholder](images/webKidsLevel8Solve.png)
 
 
 ## Level 9
 
-![placeholder](/images/webKidsLevel9Card.png)
+![placeholder](images/webKidsLevel9Card.png)
 
-![placeholder](/images/webKidsLevel9Target.png)
+![placeholder](images/webKidsLevel9Target.png)
 
 Ээээ(((
 
-![placeholder](/images/webKidsLevel9Cookie.png)
+![placeholder](images/webKidsLevel9Cookie.png)
 
 Заметил интересную куку с недвусмысленным названием, можно попытаться заспуфить:
 
-![placeholder](/images/webKidsLevel9Solve.png)
+![placeholder](images/webKidsLevel9Solve.png)
 
 И это дает флаг ^^
 
 
 ## Level 10
 
-![placeholder](/images/webKidsLevel10Card.png)
+![placeholder](images/webKidsLevel10Card.png)
 
-![placeholder](/images/webKidsLevel10Target.png)
+![placeholder](images/webKidsLevel10Target.png)
 
 Посмотрим содержимое `robots.txt`:
 
-![placeholder](/images/webKidsLevel10RobotsTxt.png)
+![placeholder](images/webKidsLevel10RobotsTxt.png)
 
 Теперь перейдем в обнаруженную директорию и получим флажок:
 
-![placeholder](/images/webKidsLevel10Solve.png)
+![placeholder](images/webKidsLevel10Solve.png)
 
 
 ## Level 11
 
-![placeholder](/images/webKidsLevel11Card.png)
+![placeholder](images/webKidsLevel11Card.png)
 
-![placeholder](/images/webKidsLevel11Target.png)
+![placeholder](images/webKidsLevel11Target.png)
 
 Профаззим приложение базовым сканом `dirbuster`:
 
-![placeholder](/images/webKidsLevel11Dirb.png)
+![placeholder](images/webKidsLevel11Dirb.png)
 
 Он на удивление очень долго перебирал (я остановил когда он хоть что то нашел), но все таки подсветил нужный эндпойнт
 
-![placeholder](/images/webKidsLevel11Solve.png)
+![placeholder](images/webKidsLevel11Solve.png)
 
 Перейдя по нему получим флаг
 
 
 ## Level 12
 
-![placeholder](/images/webKidsLevel12Card.png)
+![placeholder](images/webKidsLevel12Card.png)
 
-![placeholder](/images/webKidsLevel12Target.png)
+![placeholder](images/webKidsLevel12Target.png)
 
 Попробуем потыкать приложение на функционал: 
 
-![placeholder](/images/webKidsLevel12Alert.png)
+![placeholder](images/webKidsLevel12Alert.png)
 
 Чекнем дев-тулзы:
 
-![placeholder](/images/webKidsLevel12Code.png)
+![placeholder](images/webKidsLevel12Code.png)
 
 Все что требуется для решения, внимательно провести трассировку кода и по кусочкам собрать флаг:
 
-![placeholder](/images/webKidsLevel12Solve.png)
+![placeholder](images/webKidsLevel12Solve.png)
 
 
 ## Level 13
 
-![placeholder](/images/webKidsLevel13Card.png)
+![placeholder](images/webKidsLevel13Card.png)
 
-![placeholder](/images/webKidsLevel13Target.png)
+![placeholder](images/webKidsLevel13Target.png)
 
 Если открыть девтулзы, то увидим `JsFuck`:
 
-![placeholder](/images/webKidsLevel13JSFuck.png)
+![placeholder](images/webKidsLevel13JSFuck.png)
 
 Декодируем `JsFuck`-овское месьево:
 
-![placeholder](/images/webKidsLevel13Decode.png)
+![placeholder](images/webKidsLevel13Decode.png)
 
 Что то связанное с `local storage`, можно его чекнуть, не повредит ^^
 
-![placeholder](/images/webKidsLevel13Solve.png)
+![placeholder](images/webKidsLevel13Solve.png)
 
 И в самом деле, флаг тут. Заворачиваем в KSL{} и радуемся жизни
 
 
 ## Level 14
 
-![placeholder](/images/webKidsLevel14Card.png)
+![placeholder](images/webKidsLevel14Card.png)
 
 Итак, финальный уровень
 
-![placeholder](/images/webKidsLevel14Target.png)
+![placeholder](images/webKidsLevel14Target.png)
 
 Хм, ну окей, дёрнем предложенную ручку:
 
-![placeholder](/images/webKidsLevel14File.png)
+![placeholder](images/webKidsLevel14File.png)
 
 А файл-то, сырой ^^
 Скачаю его через `curl`:
 
-![placeholder](/images/webKidsLevel14Solve.png)
+![placeholder](images/webKidsLevel14Solve.png)
 
 Вот он:
 
-![placeholder](/images/flag.png)
+![placeholder](images/flag.png)
 
 На этом все с категорией `easy`
 
