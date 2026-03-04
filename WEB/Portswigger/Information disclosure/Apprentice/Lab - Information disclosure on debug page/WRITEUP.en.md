@@ -103,7 +103,7 @@ A case where multiple service endpoints are exposed to the outside is a serious 
 
 If for some reason this endpoint is needed, protection against this vulnerability is to return `403` to all "ordinary" users trying to access both `/cgi-bin/` and any of its contents (to prevent Broken Access Control). In the context of this lab, this implementation is possible, since cookie tokens are transmitted:
 
-![placeholder](labCookieUsage.png)
+![placeholder](images/labCookieUsage.png)
 
 And even better — simply do not deploy debug pages^^
 
