@@ -47,7 +47,7 @@ https://LAB_ID?productID=blahblahblah
 ![placeholder](images/labErrorMsg.png)
 
 Интересующие нас данные - `Apache Struts 2 2.3.31`. Раскрытие этих данных опасно, т.к позволяет атакующему расширить attack-surface через поиск релевантных CVE, в качестве примера к упомянутой версии Apache Struts - `CVE-2017-5638`.
-
+    
 С помощью кнопки `Submit Solution` сдаем "флаг", решая лабу:
 
 ![placeholder](images/labSolved.png)
