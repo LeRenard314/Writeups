@@ -1,5 +1,4 @@
-# Information Disclosure in Error Messages
-
+# Information Disclosure on debug page
 
 Выберите язык / Choose your language:
 
