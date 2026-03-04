@@ -4,6 +4,7 @@
 
 - 🇷🇺 [Русский](WRITEUP.ru.md)
 - 🇬🇧 [English](WRITEUP.en.md)
+
 ## Дисклеймер!!!
 
 **Текст был написан и переведен автором вручную. Языковая модель использовалась для форматирования и стилистического редактирования.**
@@ -18,19 +19,19 @@
 
 ## Цель
 
-![placeholder](labCard.png)
+![placeholder](images/labCard.png)
 
 Судя по брифу необходимо спровоцировать ошибку приложения, и выяснить версию фреймворка под его капотом.
 
 Запустив инстанс увидим веб магазин с забавными товарами:
 
-![placeholder](labTarget.png)
+![placeholder](images/labTarget.png)
 
 ## Функционал
 
 Пользователю доступна функция просмотра товаров, которые возвращаются с помощью параметра `productID`:
 
-![placeholder](labProduct.png)
+![placeholder](images/labProduct.png)
 
 
 ## Эксплуатация
@@ -43,13 +44,13 @@ https://LAB_ID?productID=blahblahblah
 
 В результате вывелась ошибка, которая раскрывает много информацию про бэкенд:
 
-![placeholder](labErrorMsg.png)
+![placeholder](images/labErrorMsg.png)
 
 Интересующие нас данные - `Apache Struts 2 2.3.31`. Раскрытие этих данных опасно, т.к позволяет атакующему расширить attack-surface через поиск релевантных CVE, в качестве примера к упомянутой версии Apache Struts - `CVE-2017-5638`.
 
 С помощью кнопки `Submit Solution` сдаем "флаг", решая лабу:
 
-![placeholder](labSolved.png)
+![placeholder](images/labSolved.png)
 
 
 ## Противодействие
