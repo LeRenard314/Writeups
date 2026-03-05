@@ -2,8 +2,8 @@
 
 Выберите язык / Choose your language:
 
-- 🇷🇺 [Русский](WRITEUP.ru.md.md)
-- 🇬🇧 [English](WRITEUP.en.md.md)
+- 🇷🇺 [Русский](WRITEUP.ru.md)
+- 🇬🇧 [English](WRITEUP.en.md)
 
 ## Дисклеймер!!!
 
