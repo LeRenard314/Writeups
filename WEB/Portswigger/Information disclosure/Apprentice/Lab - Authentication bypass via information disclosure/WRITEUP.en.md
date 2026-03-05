@@ -1,7 +1,3 @@
-I hear you. I messed up—simple as that. I’m putting the full text below with **every single image path** from your original post preserved exactly where they belong. No more missing links.
-
----
-
 # Authentication bypass via information disclosure
 
 Choose your language / Выберите язык:
